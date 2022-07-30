@@ -3,11 +3,10 @@ import { Form, Input, Button, Checkbox, Radio, Alert, Upload } from 'antd';
 import axios from 'axios';
 import ReCAPTCHA from 'react-google-recaptcha';
 import { UploadOutlined } from '@ant-design/icons';
-import Map from '../common/map';
 
 const { TextArea } = Input;
 
-const AppContact = () => {
+const AppBulletin = () => {
 
     const formsUrl = process.env.REACT_APP_CONTACT_LINK
     const [form] = Form.useForm();
@@ -17,7 +16,6 @@ const AppContact = () => {
     const [successAlertVisible, showSuccessAlert] = useState(false)
     const [errorAlertVisible, showErrorAlert] = useState(false)
     const [ fileName, setFileName ] = useState()
-    const [ fileType, setFileType ] = useState()
     
     const recaptchaKey = process.env.REACT_APP_RECAPTCHA_KEY
     const recaptchaRef = useRef();
@@ -35,9 +33,7 @@ const AppContact = () => {
         reader.addEventListener('load', () => callback(reader.result));
         reader.readAsDataURL(file);
         reader.onload = () => {
-            console.log(file)
             console.log(file.size);
-            setFileType(file.type)
             if(file.size / 1024 / 1024 < 2) {
                 onLoad(reader.result)
                 showErrorAlert(false)
@@ -92,8 +88,7 @@ const AppContact = () => {
                     full_name: values.full_name,
                     subject: values.subject,
                     base64Data: base64,
-                    file_name: fileName,
-                    file_type: fileType,
+                    file_name: values.full_name+"-Resume",
                     date: new Date(),
                     "g-recaptcha-response": recaptchaToken,
                     }
@@ -204,14 +199,14 @@ const AppContact = () => {
                     ]}
                 >
                     {errorAlertVisible ? (
-                        <Alert message="File must be smaller than 2MB!" className='error-message' type="error"  />
+                        <Alert message="Image must smaller than 2MB!" className='error-message' type="error"  />
                     ) : null} <br />
                     <Upload 
                         accept= '.jpeg,.png,.jpg,.dng, .pdf, .docx, .doc'
                         showUploadList={false}
                         onChange={handleChange}
                     >
-                        <Button icon={<UploadOutlined />}>Upload file(2MB max file size)</Button>
+                        <Button icon={<UploadOutlined />}>Click to Upload Resume</Button>
                         {fileName ? (
                                 <span> &nbsp; &nbsp;{fileName}</span>
                             ) : (null)
@@ -233,29 +228,25 @@ const AppContact = () => {
                 <Form.Item
                     name="captcha" 
                     valuePropName="checked"
-                    className='contact-form-recaptcha'
                     rules={[
                         { validator:(_, value) => value ? Promise.resolve() : Promise.reject('Should check if not robot') },
                     ]}
                 >
                     <ReCAPTCHA
-                      ref={recaptchaRef}
-                      sitekey={recaptchaKey}
-                      onChange={updateRecaptchaToken}
+                    ref={recaptchaRef}
+                    sitekey={recaptchaKey}
+                    onChange={updateRecaptchaToken}
                     />
                 </Form.Item>
-                {/* {errorAlertVisible === false ? ( */}
+                {errorAlertVisible === false ? (
                 <Form.Item>
-                    <Button type="primary" htmlType="submit" className="login-form-button" disabled={errorAlertVisible}>
-                      Submit
+                    <Button type="primary" htmlType="submit" className="login-form-button">
+                    Submit
                     </Button>
-                </Form.Item>
-                {/* ): null} */}
+                </Form.Item>): null}
                 </Form>
-                <Map />
             </div>
         </div>  
     );
 }
-
-export default AppContact;
+export default AppBulletin;

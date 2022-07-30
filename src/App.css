@@ -292,6 +292,62 @@ Gallery/Feature
   font-size: 22px;
 }
 
+.gallery-titlle {
+  color: white;
+}
+
+.gallery-subtitle {
+  color: yellow
+}
+
+.gallery-ant-drawer-title {
+  text-align: center;
+  font-size: 32px;
+}
+
+.gallery-ant-drawer-title .ant-drawer-title {
+  font-size: 22px;
+}
+
+.gallery-ant-drawer-title .ant-drawer-wrapper-body {
+  background: url('assets/images/bg-skyguard-blue-nologo.png') no-repeat;
+  background-position: 50% 100%;
+  background-size: cover;
+  height: auto;
+}
+
+.gallery-main-title {
+  font-size: 20px;
+  color: yellow;
+}
+
+.gallery-avatar {
+  padding: 20px;
+  width: 25%;
+  height: 25%;
+  display: contents !important;
+}
+
+.site-description-item-profile-p-label {
+  display: none;
+}
+
+.gallery-ant-drawer-title .gallery-description-content {
+  color: white;
+  font-size: 16px;
+  padding-bottom: 20px;;
+}
+
+.ant-list-item-meta-avatar {
+  display: inline-flex;
+  width: 250px;
+}
+
+.ant-drawer-content, .ant-drawer-content-wrapper {
+  padding: 10px 15px;
+  width: auto;
+}
+
 /*
 Map Block
 */
@@ -345,7 +401,7 @@ Careers
 ------------
 */
 .careerBlock {
-  background: url('assets/images/careers_bg.webp') no-repeat;
+  background: url('assets/images/ek-skyguard.png') no-repeat;
   background-position: 50% 0;
   background-size: cover;
   background-attachment: fixed;
@@ -520,6 +576,13 @@ contact
   height: 120px;
 }
 
+ant-form-item-control-input-content > #upload {
+  display: none;
+}
+
+.upload-notes {
+  color: #1890ff;
+}
 
 /* 
 footer
@@ -589,6 +652,21 @@ responsive
   .serviceBlock .ant-row > div:nth-child(2) .ant-list-item {
     transform: scale(1.14);
   }
+
+  .mobileVisible {
+    display: block;
+  }
+  
+  .mobileHidden {
+    display: none;
+  }
+
+  .mainBlock {
+    background: url('assets/images/bg-skyguard-blue-mobile.png') no-repeat;
+    background-position: 50% 100%;
+    background-size: cover;
+    height: 100vh;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -603,4 +681,59 @@ responsive
   .mobileHidden {
     display: none;
   }
+
+  .mainBlock {
+    background: url('assets/images/bg-skyguard-blue-mobile.png') no-repeat;
+    background-position: 50% 100%;
+    background-size: cover;
+    height: 100vh;
+  }
+
+  .ant-list-item, .ant-list-item-meta, .ant-list-item-meta-content{
+    flex-direction: column;
+  }
+
+  .ant-list-item-meta-content {
+    width: 100% !important;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .ant-drawer-body {
+    padding-bottom: 80px;
+  }
+
+  .gallery-drawer-image {
+    width: 300px;
+    padding-bottom: 159px;
+  }
+
+  .ant-drawer-content, .ant-drawer-content-wrapper {
+    padding: 10px 7px;
+    width: auto;
+  }
+
+}
+
+@media only screen and (max-width: 370px) {
+  .serviceBlock .ant-row > div:nth-child(2) .ant-list-item {
+    transform: scale(1.14);
+  }
+  
+  .skyguard-head-logo > img {
+    width: 50px;
+  }
+
+  .header .logo a {
+    font-size: 10px;
+  }
+
+  [title~="reCAPTCHA"] {
+    width: auto;
+  }
+
+  header.ant-layout-header {
+    width: auto;
+  }
+
 }

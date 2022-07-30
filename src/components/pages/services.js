@@ -2,7 +2,7 @@ import React from 'react';
 import { Button } from 'antd';
 // import { Carousel, Button } from 'antd';
 // import image1 from '../../assets/images/cctv.webp';
-import image2 from '../../assets/images/uniform_guard.webp';
+import image2 from '../../assets/images/ek-agila-skyguard.png';
 // import image3 from '../../assets/images/security_trainings.webp';
 
 const items = [

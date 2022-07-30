@@ -41,6 +41,7 @@ const AppHeader = () => {
             placement="right"
             closable={false}
             onClose={onClose}
+            onClick={onClose}
             visible={visible}
           >
             <Anchor targetOffset="65">
@@ -49,7 +50,7 @@ const AppHeader = () => {
               <Link href="#gallery" title="Gallery" />
               <Link href="#service" title="Service" />
               <Link href="#career" title="Career" />
-              {/* <Link href="#faq" title="FAQ" /> */}
+              <Link href="#faq" title="FAQ" />
               <Link href="#contact" title="Contact" />
             </Anchor>
           </Drawer>
