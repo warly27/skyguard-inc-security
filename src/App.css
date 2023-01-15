@@ -562,6 +562,11 @@ service block
   padding-bottom: 20px;
 }
 
+.gallery-img {
+  height: 250px;
+  width: 350px;
+}
+
 /* 
 contact
 -------
