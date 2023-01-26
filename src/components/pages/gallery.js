@@ -184,94 +184,94 @@ const AppGallery = () => {
               selectedItem?.label === ""? <img src={selectedItem.image} alt="selectedimage" className='gallery-drawer-image'/> 
               :selectedItem?.label === "seminar"?
                 <Row gutter={[16, 24]}>
-                <Col className="gutter-row" span={8}>
+                <Col className="gutter-row" xs={24} sm={24} md={12} lg={8} xl={6}>
                   <div className='img-gallery'><Image width={350} className='gallery-img' alt="images" src={training1}/></div>
                 </Col>
-                <Col className="gutter-row" span={8}>
+                <Col className="gutter-row" xs={24} sm={24} md={12} lg={8} xl={6}>
                   <div className='img-gallery'><Image width={350} className='gallery-img' alt="images" src={training2}/></div>
                 </Col>
-                <Col className="gutter-row" span={8}>
+                <Col className="gutter-row" xs={24} sm={24} md={12} lg={8} xl={6}>
                   <div className='img-gallery'><Image width={350} className='gallery-img' alt="images" src={training3}/></div>
                 </Col>
-                <Col className="gutter-row" span={8}>
+                <Col className="gutter-row" xs={24} sm={24} md={12} lg={8} xl={6}>
                   <div className='img-gallery'><Image width={350} className='gallery-img' alt="images" src={training4}/></div>
                 </Col>
-                <Col className="gutter-row" span={8}>
+                <Col className="gutter-row" xs={24} sm={24} md={12} lg={8} xl={6}>
                   <div className='img-gallery'><Image width={350} height={250} className='gallery-img' alt="images" src={training5}/></div>
                 </Col>
-                <Col className="gutter-row" span={8}>
+                <Col className="gutter-row" xs={24} sm={24} md={12} lg={8} xl={6}>
                   <div className='img-gallery'><Image width={350} className='gallery-img' alt="images" src={training6}/></div>
                 </Col>
               </Row>
               : selectedItem?.label === "inspection"?
               <Row gutter={[16, 24]}>
-                <Col className="gutter-row" span={8}>
+                <Col className="gutter-row" xs={24} sm={24} md={12} lg={8} xl={6}>
                   <div className='img-gallery'><Image width={350} className='gallery-img' alt="images" src={inspection2}/></div>
                 </Col>
-                <Col className="gutter-row" span={8}>
+                <Col className="gutter-row" xs={24} sm={24} md={12} lg={8} xl={6}>
                   <div className='img-gallery'><Image width={350} className='gallery-img' alt="images" src={inspection3}/></div>
                 </Col>
-                <Col className="gutter-row" span={8}>
+                <Col className="gutter-row" xs={24} sm={24} md={12} lg={8} xl={6}>
                   <div className='img-gallery'><Image width={350} className='gallery-img' alt="images" src={inspection4}/></div>
                 </Col>
-                <Col className="gutter-row" span={8}>
+                <Col className="gutter-row" xs={24} sm={24} md={12} lg={8} xl={6}>
                   <div className='img-gallery'><Image width={350} className='gallery-img' alt="images" src={inspection5}/></div>
                 </Col>
-                <Col className="gutter-row" span={8}>
+                <Col className="gutter-row" xs={24} sm={24} md={12} lg={8} xl={6}>
                   <div className='img-gallery'><Image width={350} className='gallery-img' alt="images" src={inspection6}/></div>
                 </Col>
-                <Col className="gutter-row" span={8}>
+                <Col className="gutter-row" xs={24} sm={24} md={12} lg={8} xl={6}>
                   <div className='img-gallery'><Image width={350} className='gallery-img' alt="images" src={inspection8}/></div>
                 </Col>
-                <Col className="gutter-row" span={8}>
+                <Col className="gutter-row" xs={24} sm={24} md={12} lg={8} xl={6}>
                   <div className='img-gallery'><Image width={350} className='gallery-img' alt="images" src={inspection9}/></div>
                 </Col>
               </Row>
                 : selectedItem?.label === "ntc"?
                 <Row gutter={[16, 24]}>
-                  <Col className="gutter-row" span={6}>
+                  <Col className="gutter-row" xs={24} sm={24} md={12} lg={8} xl={6}>
                     <div className='img-gallery'><Image width={350} className='gallery-img' alt="images" src={ntc_rlm2}/></div>
                   </Col>
-                  <Col className="gutter-row" span={6}>
+                  <Col className="gutter-row" xs={24} sm={24} md={12} lg={8} xl={6}>
                     <div className='img-gallery'><Image width={350} className='gallery-img' alt="images" src={ntc_rlm3}/></div>
                   </Col>
-                  <Col className="gutter-row" span={6}>
+                  <Col className="gutter-row" xs={24} sm={24} md={12} lg={8} xl={6}>
                     <div className='img-gallery'><Image width={350} className='gallery-img' alt="images" src={ntc_rlm4}/></div>
                   </Col>
-                  <Col className="gutter-row" span={6}>
+                  <Col className="gutter-row" xs={24} sm={24} md={12} lg={8} xl={6}>
                     <div className='img-gallery'><Image width={350} className='gallery-img' alt="images" src={ntc_rlm5}/></div>
                   </Col>
-                  <Col className="gutter-row" span={6}>
+                  <Col className="gutter-row" xs={24} sm={24} md={12} lg={8} xl={6}>
                     <div className='img-gallery'><Image width={350} className='gallery-img' alt="images" src={ntc_rlm6}/></div>
                   </Col>
-                  <Col className="gutter-row" span={6}>
+                  <Col className="gutter-row" xs={24} sm={24} md={12} lg={8} xl={6}>
                     <div className='img-gallery'><Image width={350} className='gallery-img' alt="images" src={ntc_rlm7}/></div>
                   </Col>
-                  <Col className="gutter-row" span={6}>
+                  <Col className="gutter-row" xs={24} sm={24} md={12} lg={8} xl={6}>
                     <div className='img-gallery'><Image width={350} className='gallery-img' alt="images" src={ntc_rlm9}/></div>
                   </Col>
-                  <Col className="gutter-row" span={6}>
+                  <Col className="gutter-row" xs={24} sm={24} md={12} lg={8} xl={6}>
                     <div className='img-gallery'><Image width={350} className='gallery-img' alt="images" src={ntc_rlm10}/></div>
                   </Col>
                 </Row>
               : selectedItem?.label === "squad"?
               <Row gutter={[16, 24]}>
-                <Col className="gutter-row" span={8}>
+                <Col className="gutter-row" xs={24} sm={24} md={12} lg={8} xl={6}>
                   <div className='img-gallery'><Image width={350} className='gallery-img' alt="images" src={bombsquad2}/></div>
                 </Col>
-                <Col className="gutter-row" span={8}>
+                <Col className="gutter-row" xs={24} sm={24} md={12} lg={8} xl={6}>
                   <div className='img-gallery'><Image width={350} className='gallery-img' alt="images" src={bombsquad3}/></div>
                 </Col>
-                <Col className="gutter-row" span={8}>
+                <Col className="gutter-row" xs={24} sm={24} md={12} lg={8} xl={6}>
                   <div className='img-gallery'><Image width={350} className='gallery-img' alt="images" src={bombsquad4}/></div>
                 </Col>
-                <Col className="gutter-row" span={8}>
+                <Col className="gutter-row" xs={24} sm={24} md={12} lg={8} xl={6}>
                   <div className='img-gallery'><Image width={350} className='gallery-img' alt="images" src={bombsquad5}/></div>
                 </Col>
-                <Col className="gutter-row" span={8}>
+                <Col className="gutter-row" xs={24} sm={24} md={12} lg={8} xl={6}>
                   <div className='img-gallery'><Image width={350} className='gallery-img' alt="images" src={bombsquad6}/></div>
                 </Col>
-                {/* <Col className="gutter-row" span={8}>
+                {/* <Col className="gutter-row" xs={24} sm={24} md={12} lg={8} xl={6}>
                   <div className='img-gallery'><Image width={350} className='gallery-img' alt="images" src={training6}/></div>
                 </Col> */}
               </Row>               
