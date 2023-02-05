@@ -162,7 +162,7 @@ const AppGallery = () => {
         className='gallery-ant-drawer-title'
         width="auto"
         onClose={onClose}
-        visible={visible}
+        open={visible}
         bodyStyle={{
           paddingBottom: 80,
           textAlign: 'center',

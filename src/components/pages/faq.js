@@ -72,7 +72,7 @@ const AppFaq = () => {
         <div className="titleHolder">
           <h2>Frequently Asked Questions</h2>
         </div>
-        <Modal title="FAQ" className='faq-modal' key="submit" visible={isModalVisible}  width={1000} centered onCancel={handleCancel} >
+        <Modal title="FAQ" className='faq-modal' key="submit" open={isModalVisible}  width={1000} centered onCancel={handleCancel} >
           <Form
             name="normal_login"
             className="login-form"

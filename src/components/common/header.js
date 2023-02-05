@@ -27,6 +27,7 @@ const AppHeader = () => {
             <Link href="#main" title="Home" />
             <Link href="#about" title="About" />
             <Link href="#gallery" title="Gallery" />
+            <Link href="#bulletin" title="Bulletin" />
             <Link href="#service" title="Service" />
             <Link href="#career" title="Career" />
             {/* <Link href="#faq" title="FAQ" /> */}
@@ -42,7 +43,7 @@ const AppHeader = () => {
             closable={false}
             onClose={onClose}
             onClick={onClose}
-            visible={visible}
+            show={visible}
           >
             <Anchor targetOffset="65">
               <Link href="#main" title="Home" />

@@ -44,7 +44,7 @@ class AppCareer extends React.Component {
           </div> */}
           <Modal
 
-            title="Job opennings" key="submit" visible={this.state.visible} width={1000} centered onCancel={this.handleCancel} destroyOnClose = {true}
+            title="Job openings" key="submit" open={this.state.visible} width={1000} centered onCancel={this.handleCancel} destroyOnClose = {true}
             
             footer={[
               <Button key="cancel" type="primary"  onClick={this.handleCancel}>

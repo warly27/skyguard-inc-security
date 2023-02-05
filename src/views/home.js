@@ -1,5 +1,5 @@
 import React from 'react';
-import {AppMain, AppAbout, AppGallery, AppService, AppCareer, AppFaq, AppContact } from '../components/pages'
+import {AppMain, AppAbout, AppGallery, AppService, AppCareer, AppFaq, AppContact, AppBulletin } from '../components/pages'
 
 const AppHome = () => {
   return (
@@ -7,6 +7,7 @@ const AppHome = () => {
       <AppMain/>
       <AppAbout/>
       <AppGallery/>
+      <AppBulletin/>
       <AppService/>
       <AppCareer/>
       <AppFaq/>
