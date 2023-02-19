@@ -1,5 +1,5 @@
 import React from 'react'
-import { Carousel, Button, Modal, Image } from 'antd';
+import { Carousel, Button, Modal } from 'antd';
 import { useState } from 'react';
 
 
